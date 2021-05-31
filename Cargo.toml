@@ -1,7 +1,7 @@
 [package]
 name = "more_cargo"
 version = "0.1.0"
-authors = ["jmaralc <jmaralc@gmail.com>"]
+authors = ["jmaralc@gmail.com"]
 edition = "2018"
 description = "A set of examples while learning Rust. Don't use it for real purpose."
 license = "MIT OR Apache-2.0"
