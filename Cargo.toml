@@ -1,6 +1,6 @@
 [package]
 name = "more_cargo_co"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["jmaralc <jmaralc@gmail.com>"]
 edition = "2018"
 description = "A set of examples while learning Rust. Don't use it for real purpose"
