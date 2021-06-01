@@ -12,7 +12,8 @@ use rand::Rng;
 use termion::clear;
 
 /// Return a circle whose color depends on the percentage
-///
+/// Below just an example of inserting an image in the docs
+/// <img src="https://bluss.github.io/ndarray/images/split_at.svg" width="300px" height="271px">
 /// # Examples
 ///
 /// ```
