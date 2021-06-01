@@ -18,21 +18,20 @@ use termion::clear;
 ///
 /// ```
 /// let percentage = 5;
-/// let answer = more_cargo::paint_point(arg);
+/// let answer = more_cargo_co::paint_point(percentage);
 ///
 /// assert_eq!('\u{1F534}', answer);
 /// ```
 /// # Panics
-///
-/// ```
+/// This function panics if the percentage is greater than 100
+/// ```rust, should_panic
 /// let percentage = 101;
-/// let answer = more_cargo::paint_point(arg);
+/// let answer = more_cargo_co::paint_point(percentage);
 ///
-/// assert_eq!('\u{1F534}', answer);
 /// ```
 /// # Errors
 /// # Safety
-fn paint_point(loading_percentage: i32) -> char{
+pub fn paint_point(loading_percentage: i32) -> char{
     let red_emoji = '\u{1F534}';
     let yellow_emoji = '\u{1F7E1}';
     let green_emoji = '\u{1F7E2}';
@@ -48,7 +47,8 @@ fn paint_point(loading_percentage: i32) -> char{
     }
 }
 
-fn main() {
+
+fn loading_mock() {
     let mut rng = rand::thread_rng();
 
     for i in 1..100 {
